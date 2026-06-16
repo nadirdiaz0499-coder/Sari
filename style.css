@@ -7,49 +7,21 @@
 }
 
 body {
-    background-color: #fcf9f5; /* El tono crema/arena pálido y limpio de tu fondo */
-    color: #332d2b; /* Café/Grafito suave para mantener la armonía orgánica */
+    background-color: #faf6f5; /* Crema pulcro de fondo */
+    color: #38423a; /* Tono oliva/grafito cenizo oscuro para textos */
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
 }
 
-/* --- EL LOGO REAL DEL LOGOTIPO --- */
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.logo-sari {
-    font-family: 'Playfair Display', serif;
-    font-style: italic; /* Cursiva elegante */
-    font-weight: 600;
-    font-size: 28px;
-    color: #607261; /* El hermoso verde menta/oliva orgánico del logo */
-    text-transform: none;
-}
-
-.logo-studio {
+h1, h2, h3, h4, h5 {
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 13px;
-    letter-spacing: 2px; /* Mayúsculas separadas y limpias */
-    color: #d1a3a4; /* El rosa viejo/rosa pastel suave del logo */
-    position: relative;
-    top: 4px; /* Centrado visual respecto a la cursiva */
-}
-
-/* TITULARES DE LAS SECCIONES */
-h1, h2 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    color: #332d2b;
+    color: #222a23;
     letter-spacing: -0.5px;
 }
 
-/* --- MENÚ DE NAVEGACIÓN --- */
+/* --- MENÚ DE NAVEGACIÓN (COMPACTO Y ELEGANTE) --- */
 header {
     position: fixed;
     top: 0;
@@ -57,331 +29,253 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 8%;
-    background-color: rgba(252, 249, 245, 0.9); /* Transparencia sobre el fondo crema */
-    backdrop-filter: blur(20px); 
+    padding: 8px 8%; /* 🔥 Reducido de 15px a 8px para adelgazar drásticamente el menú */
+    background-color: rgba(250, 246, 245, 0.9);
+    backdrop-filter: blur(20px);
     z-index: 1000;
-    border-bottom: 1px solid rgba(96, 114, 97, 0.08);
+    border-bottom: 1px solid rgba(177, 197, 124, 0.15);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* 🚀 LOGO EN TAMAÑO EQUILIBRADO PARA DEKTOP */
+.logo-img {
+    height: 75px; /* 🔥 Ajustado a 75px: el tamaño perfecto para que se lea sin inflar el menú */
+    width: auto;
+    object-fit: contain;
+    transition: height 0.3s ease;
 }
 
 nav a {
     text-decoration: none;
-    color: #615754;
+    color: #525d54;
     font-size: 13px;
-    font-weight: 400;
-    margin-left: 35px;
+    font-weight: 500;
+    margin-left: 30px;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #607261; /* Cambio al verde de la marca */
+    color: #b1c57c; /* El verde pistache exacto del logo */
 }
 
 .btn-nav {
-    background-color: #607261; /* Botón verde menta/oliva */
+    background-color: #b1c57c; 
     color: #ffffff !important;
-    padding: 10px 24px;
+    padding: 10px 22px;
     border-radius: 25px;
-    font-weight: 500;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, opacity 0.3s;
 }
 
 .btn-nav:hover {
-    background-color: #4a594b;
+    opacity: 0.9;
 }
 
-/* --- SECCIÓN HERO --- */
+/* --- HERO --- */
 .hero {
-    height: 100vh;
+    height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgba(252, 249, 245, 0.4), rgba(252, 249, 245, 0.4)), 
-                url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1920') center/cover no-repeat;
     padding: 0 20px;
+    background: linear-gradient(rgba(250, 246, 245, 0.45), rgba(250, 246, 245, 0.45)), 
+                url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1920') center/cover no-repeat;
 }
 
 .hero-content h1 {
     font-size: 54px;
-    line-height: 1.2;
-    margin-bottom: 20px;
-    color: #2b2523;
+    font-weight: 600;
+    line-height: 1.15;
+    margin-bottom: 15px;
 }
 
 .subtitulo {
     font-size: 16px;
-    color: #615754;
-    max-width: 550px;
-    margin: 0 auto 40px;
+    color: #525d54;
+    max-width: 520px;
+    margin: 0 auto 35px;
     line-height: 1.6;
 }
 
 .btn-principal {
     display: inline-block;
     padding: 16px 45px;
-    background-color: #d1a3a4; /* Hermoso botón en el rosa pastel de STUDIO */
-    color: #ffffff;
+    background-color: #fbcad7; /* El rosa Pantone Flushing Pink exacto[cite: 1] */
+    color: #222a23;
     text-decoration: none;
     border-radius: 30px;
     font-size: 14px;
-    font-weight: 500;
-    transition: background-color 0.3s, transform 0.2s;
-    box-shadow: 0 4px 15px rgba(209, 163, 164, 0.2);
+    font-weight: 600;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 15px rgba(251, 202, 215, 0.3);
 }
 
 .btn-principal:hover {
-    background-color: #c29293;
+    background-color: #f7b3c4;
+    transform: translateY(-1px);
 }
 
-/* --- ESTRUCTURA GENERAL --- */
-section {
-    padding: 120px 8%;
-}
+/* --- SERVICIOS --- */
+section { padding: 90px 8%; }
 
 .titulo-seccion {
     font-size: 36px;
     text-align: center;
-    margin-bottom: 15px;
-    color: #2b2523;
-}
-
-.descripcion-seccion {
-    text-align: center;
-    color: #615754;
-    max-width: 500px;
-    margin: 0 auto 70px;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.link-ig {
-    color: #607261;
-    text-decoration: none;
-    font-weight: 500;
-}
-.link-ig:hover {
-    text-decoration: underline;
-}
-
-.contenedor-chico {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-/* --- SECCIÓN SERVICIOS --- */
-.servicios-section {
-    background-color: #ffffff; /* Bloque blanco para separar armónicamente */
-    border-radius: 24px;
-    margin: 0 4% 40px;
-}
-
-.categoria-bloque h3 {
-    font-family: 'Inter', sans-serif;
-    font-size: 22px;
-    font-weight: 500;
-    color: #607261; /* Título de categoría en verde de la marca */
-    border-bottom: 1px solid #e8e2dc; 
-    padding-bottom: 12px;
-    margin-bottom: 25px;
-    letter-spacing: 0.5px;
-}
-
-.tabla-precios {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-}
-
-.servicio-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 28px;
-}
-
-.servicio-info {
-    display: flex;
-    flex-direction: column;
-}
-
-.servicio-nombre {
-    font-size: 15px;
-    font-weight: 400;
-    color: #332d2b;
-}
-
-.servicio-duracion {
-    font-size: 12px;
-    color: #8c827e;
-    margin-top: 5px;
-}
-
-.servicio-precio {
-    font-size: 15px;
-    font-weight: 500;
-    color: #2b2523;
-}
-
-/* --- SECCIÓN GALERÍA --- */
-.galeria-section {
-    background-color: #fcf9f5;
-}
-
-.grid-galeria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.galeria-item {
-    overflow: hidden;
-    background-color: #ffffff;
-    height: 420px;
-    border-radius: 16px; /* Bordes suaves acordes a la identidad orgánica */
-    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
-}
-
-.galeria-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.7s cubic-bezier(0.15, 1, 0.3, 1);
-}
-
-.galeria-item:hover img {
-    transform: scale(1.04);
-}
-
-/* --- SECCIÓN FORMULARIO --- */
-.agenda-section {
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    border-radius: 24px 24px 0 0;
-    margin: 40px 4% 0;
-}
-
-.contenedor-formulario {
-    width: 100%;
-    max-width: 580px;
-    text-align: center;
-}
-
-.form-beauty {
-    background: #fcf9f5; /* Tarjeta del formulario a juego con el crema de la marca */
-    padding: 45px;
-    border-radius: 20px;
-    border: 1px solid rgba(96, 114, 97, 0.05);
-    text-align: left;
-}
-
-.grupo-input {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 24px;
-}
-
-.grupo-input label {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 8px;
-    color: #607261; /* Etiquetas en verde sutil */
+    margin-bottom: 50px;
     font-weight: 600;
 }
 
-.grupo-input input, 
-.grupo-input select {
-    padding: 14px;
-    border: 1px solid #dcd5ce;
+.categoria-bloque { margin-bottom: 50px; }
+
+.categoria-bloque h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #b1c57c; 
+    border-bottom: 2px solid #b1c57c; 
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.servicio-card {
     background-color: #ffffff;
+    padding: 24px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0,0,0,0.01);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.01);
+}
+
+.servicio-card h4 { font-size: 17px; font-weight: 600; color: #222a23; }
+.precio { font-size: 17px; font-weight: 600; color: #b1c57c; } 
+
+.servicio-desc {
     font-size: 14px;
-    font-family: 'Inter', sans-serif;
-    color: #332d2b;
-    outline: none;
-    border-radius: 10px;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    color: #5c665d;
+    line-height: 1.5;
+    margin-bottom: 12px;
 }
 
-.grupo-input input:focus, 
-.grupo-input select:focus {
-    border-color: #607261; 
-    box-shadow: 0 0 0 3px rgba(96, 114, 97, 0.08);
-}
-
-.fila-doble {
+.servicio-detalles {
     display: flex;
+    gap: 20px;
+    font-size: 12px;
+    color: #8da091;
+    font-weight: 500;
+}
+
+.combo-highlight {
+    border-left: 4px solid #fbcad7; /* Distintivo rosa de combos[cite: 1] */
+}
+
+/* --- POLÍTICAS --- */
+.politicas-section {
+    background-color: #ffffff;
+    border-radius: 24px;
+    margin: 0 4%;
+}
+
+.politicas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.politica-item {
+    background-color: #faf6f5;
+    padding: 24px;
+    border-radius: 14px;
+    border: 1px solid rgba(177, 197, 124, 0.05);
+}
+
+.politica-item h5 { font-size: 15px; font-weight: 600; margin-bottom: 10px; color: #222a23; }
+.politica-item p { font-size: 13.5px; color: #525d54; line-height: 1.5; }
+
+/* --- PROMO ETERNA --- */
+.promo-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 8%;
+}
+
+.promo-container {
+    background-color: #fbcad7; /* Pantone Flushing Pink[cite: 1] */
+    color: #222a23;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 680px;
+    box-shadow: 0 4px 20px rgba(251, 202, 215, 0.2);
+}
+
+.badge-promo {
+    background-color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.promo-container h3 { font-size: 26px; margin: 15px 0 10px; font-weight: 700; }
+.promo-container p { font-size: 14px; line-height: 1.6; font-weight: 400; }
+
+/* --- GALERÍA --- */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.fila-doble .grupo-input {
-    flex: 1;
+.galeria-item { height: 400px; overflow: hidden; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
+.galeria-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
+.galeria-item:hover img { transform: scale(1.04); }
+
+/* --- FORMULARIO Y AGENDA --- */
+.agenda-section { background-color: #ffffff; border-radius: 24px 24px 0 0; margin-top: 40px; display: flex; justify-content: center; }
+.contenedor-formulario { width: 100%; max-width: 550px; text-align: center; }
+
+.form-beauty { background: #faf6f5; padding: 40px; border-radius: 20px; text-align: left; border: 1px solid rgba(0,0,0,0.01); }
+.grupo-input { display: flex; flex-direction: column; margin-bottom: 20px; }
+.grupo-input label { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 6px; color: #b1c57c; font-weight: 600; }
+
+.grupo-input input, .grupo-input select {
+    padding: 14px; border: 1px solid #dcd5ce; background-color: #ffffff;
+    font-size: 14px; font-family: 'Inter', sans-serif; color: #222a23; border-radius: 8px; outline: none; transition: border-color 0.3s;
 }
+
+.grupo-input input:focus, .grupo-input select:focus { border-color: #b1c57c; box-shadow: 0 0 0 3px rgba(177, 197, 124, 0.1); } 
+.fila-doble { display: flex; gap: 20px; }
+.fila-doble .grupo-input { flex: 1; }
 
 .btn-enviar {
-    width: 100%;
-    padding: 16px;
-    background-color: #607261; /* Botón de envío verde */
-    color: #ffffff;
-    border: none;
-    border-radius: 12px;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-    font-weight: 500;
-    font-family: 'Inter', sans-serif;
-    margin-top: 10px;
-    transition: background-color 0.3s;
+    width: 100%; padding: 16px; background-color: #b1c57c; color: #ffffff; border: none;
+    border-radius: 10px; font-size: 14px; font-weight: 600; font-family: 'Inter', sans-serif; cursor: pointer; transition: background-color 0.3s;
 }
+.btn-enviar:hover { background-color: #9cb166; }
 
-.btn-enviar:hover {
-    background-color: #4a594b;
-}
+.info-footer-studio { margin-top: 30px; font-size: 13.5px; color: #525d54; line-height: 1.6; text-align: left; background: #faf6f5; padding: 22px; border-radius: 12px; border: 1px solid rgba(177, 197, 124, 0.05); }
 
-/* --- ANIMACIONES DE SCROLL --- */
-.reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 1.2s cubic-bezier(0.215, 0.610, 0.355, 1), 
-                transform 1.2s cubic-bezier(0.215, 0.610, 0.355, 1);
-    will-change: transform, opacity;
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
+/* --- ANIMACIONES APPLE STYLE --- */
+.reveal { opacity: 0; transform: translateY(35px); transition: opacity 1.2s cubic-bezier(0.215, 0.610, 0.355, 1), transform 1.2s cubic-bezier(0.215, 0.610, 0.355, 1); will-change: transform, opacity; }
+.reveal.active { opacity: 1; transform: translateY(0); }
 .delay-1 { transition-delay: 0.15s; }
 .delay-2 { transition-delay: 0.3s; }
 
-/* --- FOOTER --- */
-footer {
-    padding: 50px;
-    text-align: center;
-    background-color: #fcf9f5;
-    font-size: 12px;
-    color: #8c827e;
-    border-top: 1px solid rgba(96, 114, 97, 0.05);
-}
+footer { padding: 40px; text-align: center; background-color: #faf6f5; font-size: 12px; color: #8fa091; border-top: 1px solid rgba(0,0,0,0.02); }
 
-/* --- RESPONSIVO --- */
+/* --- RESPONSIVO (MÓVIL) --- */
 @media (max-width: 768px) {
-    .tabla-precios, .grid-galeria {
-        grid-template-columns: 1fr;
+    .logo-img {
+        height: 55px; /* Más compacto en móvil */
     }
-    .fila-doble {
-        flex-direction: column;
-        gap: 0;
-    }
-    .hero-content h1 {
-        font-size: 34px;
-    }
-    header {
-        padding: 20px 5%;
-    }
-    nav a:not(.btn-nav) {
-        display: none; 
-    }
+    
+    .tabla-precios, .politicas-grid, .grid-galeria { grid-template-columns: 1fr; }
+    .fila-doble { flex-direction: column; gap: 0; }
+    .hero-content h1 { font-size: 36px; }
+    header { padding: 10px 5%; }
+    nav a:not(.btn-nav) { display: none; }
 }
