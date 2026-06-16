@@ -1,0 +1,387 @@
+/* --- RESET GENERAL --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fcf9f5; /* El tono crema/arena pálido y limpio de tu fondo */
+    color: #332d2b; /* Café/Grafito suave para mantener la armonía orgánica */
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- EL LOGO REAL DEL LOGOTIPO --- */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.logo-sari {
+    font-family: 'Playfair Display', serif;
+    font-style: italic; /* Cursiva elegante */
+    font-weight: 600;
+    font-size: 28px;
+    color: #607261; /* El hermoso verde menta/oliva orgánico del logo */
+    text-transform: none;
+}
+
+.logo-studio {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 2px; /* Mayúsculas separadas y limpias */
+    color: #d1a3a4; /* El rosa viejo/rosa pastel suave del logo */
+    position: relative;
+    top: 4px; /* Centrado visual respecto a la cursiva */
+}
+
+/* TITULARES DE LAS SECCIONES */
+h1, h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #332d2b;
+    letter-spacing: -0.5px;
+}
+
+/* --- MENÚ DE NAVEGACIÓN --- */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: rgba(252, 249, 245, 0.9); /* Transparencia sobre el fondo crema */
+    backdrop-filter: blur(20px); 
+    z-index: 1000;
+    border-bottom: 1px solid rgba(96, 114, 97, 0.08);
+}
+
+nav a {
+    text-decoration: none;
+    color: #615754;
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 35px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #607261; /* Cambio al verde de la marca */
+}
+
+.btn-nav {
+    background-color: #607261; /* Botón verde menta/oliva */
+    color: #ffffff !important;
+    padding: 10px 24px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn-nav:hover {
+    background-color: #4a594b;
+}
+
+/* --- SECCIÓN HERO --- */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(252, 249, 245, 0.4), rgba(252, 249, 245, 0.4)), 
+                url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1920') center/cover no-repeat;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 54px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #2b2523;
+}
+
+.subtitulo {
+    font-size: 16px;
+    color: #615754;
+    max-width: 550px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+.btn-principal {
+    display: inline-block;
+    padding: 16px 45px;
+    background-color: #d1a3a4; /* Hermoso botón en el rosa pastel de STUDIO */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 15px rgba(209, 163, 164, 0.2);
+}
+
+.btn-principal:hover {
+    background-color: #c29293;
+}
+
+/* --- ESTRUCTURA GENERAL --- */
+section {
+    padding: 120px 8%;
+}
+
+.titulo-seccion {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #2b2523;
+}
+
+.descripcion-seccion {
+    text-align: center;
+    color: #615754;
+    max-width: 500px;
+    margin: 0 auto 70px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.link-ig {
+    color: #607261;
+    text-decoration: none;
+    font-weight: 500;
+}
+.link-ig:hover {
+    text-decoration: underline;
+}
+
+.contenedor-chico {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* --- SECCIÓN SERVICIOS --- */
+.servicios-section {
+    background-color: #ffffff; /* Bloque blanco para separar armónicamente */
+    border-radius: 24px;
+    margin: 0 4% 40px;
+}
+
+.categoria-bloque h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #607261; /* Título de categoría en verde de la marca */
+    border-bottom: 1px solid #e8e2dc; 
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+.tabla-precios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.servicio-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 28px;
+}
+
+.servicio-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.servicio-nombre {
+    font-size: 15px;
+    font-weight: 400;
+    color: #332d2b;
+}
+
+.servicio-duracion {
+    font-size: 12px;
+    color: #8c827e;
+    margin-top: 5px;
+}
+
+.servicio-precio {
+    font-size: 15px;
+    font-weight: 500;
+    color: #2b2523;
+}
+
+/* --- SECCIÓN GALERÍA --- */
+.galeria-section {
+    background-color: #fcf9f5;
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.galeria-item {
+    overflow: hidden;
+    background-color: #ffffff;
+    height: 420px;
+    border-radius: 16px; /* Bordes suaves acordes a la identidad orgánica */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s cubic-bezier(0.15, 1, 0.3, 1);
+}
+
+.galeria-item:hover img {
+    transform: scale(1.04);
+}
+
+/* --- SECCIÓN FORMULARIO --- */
+.agenda-section {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    border-radius: 24px 24px 0 0;
+    margin: 40px 4% 0;
+}
+
+.contenedor-formulario {
+    width: 100%;
+    max-width: 580px;
+    text-align: center;
+}
+
+.form-beauty {
+    background: #fcf9f5; /* Tarjeta del formulario a juego con el crema de la marca */
+    padding: 45px;
+    border-radius: 20px;
+    border: 1px solid rgba(96, 114, 97, 0.05);
+    text-align: left;
+}
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.grupo-input label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    color: #607261; /* Etiquetas en verde sutil */
+    font-weight: 600;
+}
+
+.grupo-input input, 
+.grupo-input select {
+    padding: 14px;
+    border: 1px solid #dcd5ce;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: #332d2b;
+    outline: none;
+    border-radius: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.grupo-input input:focus, 
+.grupo-input select:focus {
+    border-color: #607261; 
+    box-shadow: 0 0 0 3px rgba(96, 114, 97, 0.08);
+}
+
+.fila-doble {
+    display: flex;
+    gap: 20px;
+}
+
+.fila-doble .grupo-input {
+    flex: 1;
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 16px;
+    background-color: #607261; /* Botón de envío verde */
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #4a594b;
+}
+
+/* --- ANIMACIONES DE SCROLL --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.2s cubic-bezier(0.215, 0.610, 0.355, 1), 
+                transform 1.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+    will-change: transform, opacity;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-1 { transition-delay: 0.15s; }
+.delay-2 { transition-delay: 0.3s; }
+
+/* --- FOOTER --- */
+footer {
+    padding: 50px;
+    text-align: center;
+    background-color: #fcf9f5;
+    font-size: 12px;
+    color: #8c827e;
+    border-top: 1px solid rgba(96, 114, 97, 0.05);
+}
+
+/* --- RESPONSIVO --- */
+@media (max-width: 768px) {
+    .tabla-precios, .grid-galeria {
+        grid-template-columns: 1fr;
+    }
+    .fila-doble {
+        flex-direction: column;
+        gap: 0;
+    }
+    .hero-content h1 {
+        font-size: 34px;
+    }
+    header {
+        padding: 20px 5%;
+    }
+    nav a:not(.btn-nav) {
+        display: none; 
+    }
+}

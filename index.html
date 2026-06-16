@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sari Studio | Lashes & Brows Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="logo-sari">Sari</span> <span class="logo-studio">STUDIO</span>
+        </div>
+        <nav>
+            <a href="#servicios">Servicios</a>
+            <a href="#galeria">Galería</a>
+            <a href="https://www.instagram.com/saristudio_/" target="_blank">Instagram</a>
+            <a href="#agendar" class="btn-nav">Agendar Cita</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content reveal">
+            <h1>La elegancia de una mirada natural</h1>
+            <p class="subtitulo">Especialistas en extensiones de pestañas, lifting y diseño avanzado de cejas en Sari Studio.</p>
+            <a href="#agendar" class="btn-principal">Reservar Espacio</a>
+        </div>
+    </section>
+
+    <section id="servicios" class="servicios-section">
+        <div class="contenedor-chico">
+            <h2 class="titulo-seccion reveal">Nuestros Servicios</h2>
+            <p class="descripcion-seccion reveal">Diseños personalizados basados en la simetría de tu rostro y la salud de tus pestañas naturales.</p>
+            
+            <div class="tabla-precios reveal">
+                <div class="categoria-bloque">
+                    <h3>Pestañas</h3>
+                    <div class="servicio-item">
+                        <div class="servicio-info">
+                            <span class="servicio-nombre">Lifting de Pestañas</span>
+                            <span class="servicio-duracion">60 min</span>
+                        </div>
+                        <span class="servicio-precio">$450</span>
+                    </div>
+                    <div class="servicio-item">
+                        <div class="servicio-info">
+                            <span class="servicio-nombre">Extensiones Clásicas (Efecto Rímel)</span>
+                            <span class="servicio-duracion">90 min</span>
+                        </div>
+                        <span class="servicio-precio">$650</span>
+                    </div>
+                    <div class="servicio-item">
+                        <div class="servicio-info">
+                            <span class="servicio-nombre">Volumen Ruso Híbrido</span>
+                            <span class="servicio-duracion">120 min</span>
+                        </div>
+                        <span class="servicio-precio">$800</span>
+                    </div>
+                </div>
+
+                <div class="categoria-bloque">
+                    <h3>Cejas</h3>
+                    <div class="servicio-item">
+                        <div class="servicio-info">
+                            <span class="servicio-nombre">Diseño + Depilación con Hilo</span>
+                            <span class="servicio-duracion">30 min</span>
+                        </div>
+                        <span class="servicio-precio">$250</span>
+                    </div>
+                    <div class="servicio-item">
+                        <div class="servicio-info">
+                            <span class="servicio-nombre">Laminado de Cejas (Brow Lamination)</span>
+                            <span class="servicio-duracion">45 min</span>
+                        </div>
+                        <span class="servicio-precio">$500</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="galeria-section">
+        <h2 class="titulo-seccion reveal">El Arte del Detalle</h2>
+        <p class="descripcion-seccion reveal">Echa un vistazo a nuestros últimos trabajos. Síguenos en <a href="https://www.instagram.com/saristudio_/" target="_blank" class="link-ig">@saristudio_</a></p>
+        
+        <div class="grid-galeria">
+            <div class="galeria-item reveal"><img src="https://images.unsplash.com/photo-1583001931096-959e9a1a54ea?q=80&w=600" alt="Lash Extension"></div>
+            <div class="galeria-item reveal delay-1"><img src="https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?q=80&w=600" alt="Brows Design"></div>
+            <div class="galeria-item reveal delay-2"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=600" alt="Lifting"></div>
+        </div>
+    </section>
+
+    <section id="agendar" class="agenda-section">
+        <div class="contenedor-formulario reveal">
+            <h2>Solicitar Cita</h2>
+            <p>Selecciona tu servicio y horario ideal. El sistema enviará tu solicitud de inmediato para coordinar con nuestra agenda de TimeTree.</p>
+            
+            <form id="formulario-cita" class="form-beauty">
+                <div class="grupo-input">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" required placeholder="Ej. María Fernández">
+                </div>
+
+                <div class="grupo-input">
+                    <label for="whatsapp">Tu WhatsApp</label>
+                    <input type="tel" id="whatsapp" required placeholder="Ej. 5512345678">
+                </div>
+
+                <div class="grupo-input">
+                    <label for="servicio">Servicio de Interés</label>
+                    <select id="servicio" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="Lifting de Pestañas">Lifting de Pestañas</option>
+                        <option value="Extensiones Clásicas">Extensiones Clásicas</option>
+                        <option value="Volumen Ruso Híbrido">Volumen Ruso Híbrido</option>
+                        <option value="Diseño + Depilación Hilo">Diseño + Depilación con Hilo</option>
+                        <option value="Laminado de Cejas">Laminado de Cejas</option>
+                    </select>
+                </div>
+
+                <div class="fila-doble">
+                    <div class="grupo-input">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha" required>
+                    </div>
+                    <div class="grupo-input">
+                        <label for="hora">Hora</label>
+                        <input type="time" id="hora" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Solicitud a Sari Studio</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Sari Studio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
